@@ -23,6 +23,10 @@ hr,br,option,textarea,label{
  	text-decoration: none;
  	color:black;/*********超链接下划线*********************/
  }
-
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
  /****************以上都是 整个页面 公共声明 ***************************/
 
