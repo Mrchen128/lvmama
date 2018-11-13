@@ -1,3 +1,9 @@
+.top-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 .header-nav{
     width: 100%;
     height: .9rem;
@@ -26,14 +32,204 @@
 }
 .header-menu{
     float: right;
-    width: 1.5rem;
+    width: 1.4rem;
     height: .9rem;
 }
 .header-menu span{
-    display: inline-block;
+    float: left;
     width: .7rem;
     height: .9rem;
 }
 .index{
-    background
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACHUlEQVRo3u2YX0RDURzHZ7Ea5TIiRsSIMUaMSBERESUmWnrqpZ5iT6OnnnoqPUWkiIiIsdeeYk+xjIieYvQUkda/0+/ke/m59udu98/Och4+Zuf+zp/Pveee8zs3cNebDXiIQeSB4UUfQog/vJToJ4qEAEWUdZVImLiGwBMQKAt3i0iIKGDgFSIGKigrIEZpkR7iEgN+JhLsWhxlAjE9qorIgZ1hoC9EskZMEtdkzAkRVFHkCAN8JVIN4lKIkbH7qonsYWBvxJSN+AnEfhM5VUR2IFElZluoN4M6n8RGp0W2mcRCG/XnUfeDWEVZ0G+RLUh8EWkH7aTRRrWddpyKrLMde82F6ZlBW3KarfglkmESmy6ueubN+SGWUdbnlcgSpoHsMOtBVsCn6yL2pgG3ReYwjwVecq/ytJxlFQy5KTKNdV92sOtx6s+X9Hf07YrIOJM48EGi1iY76VRkjOVGxz5K2E577IgkWLZ67la22ganjRLRZiKjlpQ71CEJM6u+YEeDuF2REXaiK3RYgh/W8uzEGWsmEiUe2YYXVkCCywgmM1xPZJC4Z8FCIQkTPrYHeeOtIhGihIDbLhAxv86U5QMwRQx2oYQno7pIhN1w+WsE2IogH9WQpYKqIuarUMb/K1lwCKtonQqqipiL043cOO1WaPVFbAUnIk03RC3iYbwW0SJaRItoES2iRbSIFtEiWkSLaBEt4oKIqvxfkV+o3A3jUUk7XAAAAABJRU5ErkJggg==);
+    background-size:25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-menu-btn{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAiCAYAAAApkEs2AAAAYklEQVRYw+3WsQnAIBgF4bNyqWQsJ4yZwIG0sJFAIJX8gXuViMUHNpdaLhdwMFeBk4BLLZf+vHt524V+hK5ffy/ncF/PHyZUqFChQoXGg5p5Zp6ZJ1SoUKFChZp51pOZt3kD3m9Em64cZgcAAAAASUVORK5CYII=);
+    background-size:21px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.search-box{
+    width: 7.1rem;
+    height: .6rem;
+    padding: .15rem .2rem;
+    background-color: #efeff7;
+}
+.search-center{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.search-center .address{
+    font-size: .24rem;
+    float: left;
+    height: 100%;
+    line-height: .6rem;
+    padding-left: .3rem;
+    color: #d30775;
+    padding-right: .3rem;
+    position: relative;
+    background-color: white;
+}
+.address::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: .1rem;
+    top:50%;
+    margin-top: -.1rem;
+    width: .1rem;
+    height: .1rem;
+    border-top: 1px solid #d30775;
+    border-right: 1px solid #d30775;
+    transform: rotate(135deg);
+}
+.search-ipt{
+    margin-left: .2rem;
+    float: left; 
+    position: relative;
+}
+.search-ipt::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top:50%;
+    margin-top: -.2rem;
+    width: .2rem;
+    height: .4rem;
+    border-left: .02rem solid #ddd;
+    
+}
+.search-ipt .fdj-img{
+    float: left;
+    width:.6rem;
+    height: .6rem;
+    margin-left: .1rem;
+    background-image: url(https://pics.lvjs.com.cn/mobile/coding/v750/ticket/img/fangdajing.png);
+    background-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.search-ipt input{
+    float: left;
+    width: 5rem;
+    height: .5rem;
+    padding: .05rem 0;
+    font-size: .28rem;
+    color: #666;
+}
+.slide-img{
+    margin-top: 1.8rem;
+}
+.slide-wrap>div{
+    float: left;
+    width: 100vw;
+    height: 1.8rem;
+}
+.slide-wrap div img{
+    width: 100vw;
+    height: 100%;
+}
+.swiper-pagination{
+    bottom: 0!important;
+}
+/***************** 人人必玩开始 *************** */
+/* .everyone-play-wrap{
+    width: 100%;
+} */
+.everyone-play{
+    box-sizing: border-box;
+    width: 100%;
+    padding:.2rem .2rem .2rem;
+
+}
+.play-top{
+    box-sizing: border-box;
+    width: 100%;
+    height: .58rem;
+     border-bottom: 1px solid #ddd;
+     padding:0 .2rem;
+     font-size: .12rem;
+     color: #666;
+}
+.play-top :first-child{
+    float: left;
+    height: 100%;
+    line-height: .58rem;
+}
+.play-top :last-child{
+    float: right;
+    height: 100%;
+    line-height: .58rem;
+}
+#swiper-container2 .play-container{
+    float:left;
+    width: auto!important;
+    margin-right: .2rem;
+    border: 1px solid #ddd;
+}
+.play-address-img{
+    width: 2.8rem;
+    height: 1.9rem;
+    background-size: cover;
+    position: relative;
+    margin-bottom: .1rem;
+}
+.bg-one{
+    background-image: url(../images/dad57418-e9c5-4b31-af81-191ec6a9b864_480_320.jpg);
+
+}
+.bg-two{
+    background-image: url(../images/337645e8-8dc2-4b4d-8e02-124f4cc1eae5_480_320.jpg);
+}
+.bg-three{
+    background-image: url(../images/01419817-4347-4b94-a270-d6ca731913f1_480_320.jpg)
+}
+.bg-four{
+    background-image: url(../images/1413185595992_480_320.jpg)
+}
+.bg-five{
+    background-image: url(../images/152a895e-e77c-45de-b092-9375274f823a_480_320.jpg)
+}
+
+.play-address-img span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .92rem;
+    height: .32rem;
+    background-color: #ff720e;
+    border-bottom-right-radius:.14rem;
+    font-size: .24rem;
+    text-indent: .1rem;
+    color: white;
+}
+.play-address-name{
+    font-size: .24rem;
+    color: #666;
+    text-indent: .15rem;
+    margin-bottom: .1rem;
+}
+.play-address-price{
+    font-size: .30rem;
+    color: #d30775;
+    padding-bottom: .2rem;
+}
+.play-address-price span:nth-of-type(1){
+    font-size: .24rem;
+    
+}
+.play-address-price span:nth-of-type(2){
+    color: #666;
+    font-size: .24rem;
+}
+/* .scroll-line{
+    width: 
+} */
+.scroll-bottom{
+    bottom: 0 !important;
 }

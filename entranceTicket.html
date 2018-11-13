@@ -1,25 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>景点门票_景区门票预订_团购-驴妈妈手机预订</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/entranceTicket.css">
+    <link rel="stylesheet" href="css/swiper.css">
     <script src="js/base.js"></script>
 </head>
 <body>
    <div id="root-wrap">
-       <div class="header-nav clearfix">
-            <div class="goBack"></div>
-            <div class="title">景点门票</div>
-            <div class="header-menu">
-                <span class="index"></span>
-                <span class="header-menu-btn"></span>
+       <!-- 头部固定滚动开始 -->
+        <div class="top-fixed">
+            <div class="header-nav clearfix">
+                    <div class="goBack"></div>
+                    <div class="title">景点门票</div>
+                    <div class="header-menu clearfix">
+                       <a href="###"><span class="index"></span></a>
+                       <a href="###"><span class="header-menu-btn"></span></a>
+                    </div>
+            </div>
+            <div class="search-box">
+                <div class="search-center clearfix">
+                    <span class="address">郑州</span>
+                    <div class="search-ipt clearfix">
+                        <i class="fdj-img"></i>
+                        <input type="text" placeholder="景点名称/城市/主题">
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- 头部固定滚动结束 -->
+       <!-- 头部banner开始 -->
+       <div class='slide-img'>
+            <div class="swiper-container" id="swiper-container1">
+                <div class="swiper-wrapper slide-wrap">
+                    <div class="swiper-slide">
+                       <a href="###"><img src="images/1505478328_47803.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="###"><img src="images/1514444843_75282.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                       <a href="###"><img src="images/1534391541_58356.jpg" alt=""></a> 
+                       </div>
+                    <div class="swiper-slide">
+                       <a href="###"><img src="images/1538033200_27026.jpg" alt=""></a> 
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+       <!-- 头部banner结束 -->
+       <!-- 人人必玩开始 -->
+       <div class="everyone-play-wrap">
+            <div class="play-top">
+                <span>人气必玩</span>
+                <span>郑州全部景点 > </span>
+             </div>
+            <div class="everyone-play">
+                <div class="swiper-container" id="swiper-container2">
+                     <div class="swiper-wrapper scroll-line">
+                         <div class="swiper-slide play-container">
+                            <a href="###">
+                                <div class="play-address-img bg-one">
+                                    <span>今日订</span>
+                                </div>
+                                <p class="play-address-name">河南老君山</p>
+                                <p class="play-address-price"><span>￥</span>90<span>起</span></p> 
+                            </a>
+                         </div>
+                         <div class="swiper-slide play-container">
+                           <a href="###">
+                                <div class="play-address-img bg-two">
+                                        <span>今日订</span>
+                                    </div>
+                                    <p class="play-address-name">郑州方特欢乐世界</p>
+                                    <p class="play-address-price"><span>￥</span>193<span>起</span></p> 
+                                </a>
+                           </a>
+                         </div>
+                         <div class="swiper-slide play-container">
+                            <a href="###">
+                                <div class="play-address-img bg-three">
+                                    <span>今日订</span>
+                                </div>
+                                <p class="play-address-name">开封府</p>
+                                <p class="play-address-price"><span>￥</span>59<span>起</span></p> 
+                           
+                            </a> 
+                            </div>
+                         <div class="swiper-slide play-container">
+                            <a href="###">
+                                <div class="play-address-img bg-four">
+                                    <span>今日订</span>
+                                </div>
+                                <p class="play-address-name">焦作云台山</p>
+                                <p class="play-address-price"><span>￥</span>180<span>起</span></p> 
+                            </a> 
+                         </div>
+                         <div class="swiper-slide play-container">
+                            <a href="###">
+                                <div class="play-address-img bg-five">
+                                    <span>今日订</span>
+                                </div>
+                                <p class="play-address-name">郑州方特梦幻王国</p>
+                                <p class="play-address-price"><span>￥</span>240<span>起</span></p> 
+                            </a> 
+                         </div>
+                     </div>
+                     <div class="swiper-scrollbar scroll-bottom"></div>
+                 </div>
             </div>
        </div>
        
+       <!-- 人人必玩结束-->
+
+
+
+       
    </div>
 </body>
+<script src="js/swiper.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/entranceTicket.js"></script>
 </html>
